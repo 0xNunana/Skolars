@@ -3,7 +3,7 @@ import React from 'react'
 
 const Navigation = () => {
   return (
-    <nav className='px-5 py-2 max-w-screen-2xl mx-auto flex justify-between sticky top-0 z-50'>
+    <nav className='px-5 py-2 max-w-screen-2xl mx-auto flex justify-between sticky top-0 bg-transparent backdrop-blur-md z-50'>
 <Image src='/logo.png' alt='Skulars logo' width={500} height={500} className='w-[220px]'/>
 <ul className='flex gap-4 items-center'>
     <li>Home</li>

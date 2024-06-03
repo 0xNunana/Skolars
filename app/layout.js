@@ -1,9 +1,10 @@
-import { Inter } from "next/font/google";
+import { Inter, Orbitron } from "next/font/google";
 import "./globals.css";
 import Navigation from "@/sections/Navigation";
 import Footer from "@/sections/Footer";
 
-const inter = Inter({ subsets: ["latin"] });
+
+const orbitron =Orbitron({subsets:["latin"]})
 
 export const metadata = {
   title: "Skolars Entertainment",
@@ -13,8 +14,8 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
-        {/* <Navigation/> */}
+      <body className={orbitron.className}>
+        <Navigation/>
         <div>{children}</div>
         <Footer/>
         </body>
