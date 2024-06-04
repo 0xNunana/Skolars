@@ -15,13 +15,13 @@ module.exports = {
           "hero":'url("/art.webp")'
       },
       animation:{
-        hero:'backentry 2s forwards alternate'
+        hero:'backentry 5s forwards alternate'
       },
       keyframes:{
         backentry:{
           '0%':{
-            opacity:0,
-            transform:'scale(1.3)'
+            opacity:0.5,
+            transform:'scale(1.3) translateX(100px)'
           },
           '50%':{
             opacity:1,

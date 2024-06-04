@@ -4,6 +4,41 @@
 
 
 
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@keyframes bounce{
+  from,20%,53%,
+  to{
+      animation-timing-function:cubic-bezier(.215,.61,.355,1);
+      transform:translate3d(0,0,0)}
+  40%,43%{
+      animation-timing-function:cubic-bezier(.755,.05,.855,.06);
+      transform:translate3d(0,-100px,0)}
+  70%{
+          animation-timing-function:cubic-bezier(.755,.05,.855,.06);
+          transform:translate3d(0,-50px,0) }
+  80%{
+      transition-timing-function:cubic-bezier(.215,.61,.355,1);
+      transform:translate3d(0,0,0) }
+      
+  90%{transform:translate3d(0,-40px,0) }
+}
+
+.char {
+  opacity: 0;
+  display: inline-block;
+  animation: fadeIn 0.5s forwards;
+}
+
+.play {
+ 
+  display: inline-block;
+  animation: bounce 3s ease-in-out ;
+
+}
 
 
 

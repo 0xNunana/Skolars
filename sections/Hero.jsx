@@ -10,7 +10,8 @@ const images = [
 
 const Hero = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
-
+const name= ['S','k','u','l','a','r','s']
+const name2=['E','n','t','e','r','t','a','i','n','m','e','n','t']
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
@@ -31,8 +32,17 @@ const Hero = () => {
       <div className='absolute inset-0 bg-black bg-opacity-50 flex items-center   px-4'>
         <div className='grid md:grid-cols-2 w-full '>
         <div className='p-6 rounded-lg   '>
+         
           <h1 className='text-white text-4xl md:text-6xl lg:text-8xl font-bold mb-4'>
-            Skulars Entertainment
+          {name.map((char,i)=>( <span key={i} className='char' style={{ animationDelay: `${i * 0.1}s`,}}>
+                   {char === '' ? '\u00A0' : char}
+                </span>))}
+          </h1>
+           
+          <h1 className='text-white text-4xl md:text-6xl lg:text-8xl font-bold mb-4'>
+          {name2.map((char,i)=>( <span key={i} className='char' style={{ animationDelay: `${i * 0.1}s`,}}>
+                   {char === '' ? '\u00A0' : char}
+                </span>))}
           </h1>
           <div className='flex items-center gap-2'>
           <p className='text-[#D4AF37] text-lg md:text-xl mb-8 p-1 text-nowrap'>
@@ -41,13 +51,13 @@ const Hero = () => {
           <div>
             
           </div>
-          <div className='w-[80%] h-1 border-2 border-[#D4AF37]'/>
+          <div className='w-[80%] h-0.5 border-2 border-[#D4AF37]'/>
           </div>
         
         
         </div>
         <div className=' max-sm:w-full  flex items-center justify-center '>
-        <button className='  '>
+        <button className=' play animate-pulse'>
 
 <svg  version="1.1" id="Capa_1 c"   className='w-[80px] h-[80px]  lg:w-[150px] xl:h-[200px]'
 	 viewBox="0 0 58 58" >
