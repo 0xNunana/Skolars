@@ -21,15 +21,15 @@ module.exports = {
         backentry:{
           '0%':{
             opacity:0,
-            transform:'scale(1.1)'
+            transform:'scale(1.3)'
           },
           '50%':{
             opacity:1,
-            transform:'scale(0.95) rotate(-3deg) translateX(10px)'
+            transform:'scale(1) '
           },
           '100%':{
             opacity:1,
-            transform:'scale(1)'
+            transform:'scale(1.1)'
           }
   
         }

@@ -36,7 +36,7 @@ const Hero = () => {
           </h1>
           <div className='flex items-center gap-2'>
           <p className='text-[#D4AF37] text-lg md:text-xl mb-8 p-1 text-nowrap'>
-        Where stars are made 
+        Where stars are made.
           </p>
           <div>
             
