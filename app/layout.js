@@ -2,6 +2,7 @@ import { Inter, Orbitron } from "next/font/google";
 import "./globals.css";
 import Navigation from "@/sections/Navigation";
 import Footer from "@/sections/Footer";
+import Head from "next/head";
 
 
 const orbitron =Orbitron({subsets:["latin"]})
@@ -14,6 +15,17 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <Head>
+      <link
+          rel="stylesheet"
+          href="https://unpkg.com/swiper/swiper-bundle.min.css"
+        />
+        <link
+          rel="stylesheet"
+          href="/assets/css/theme.min.css"
+        />
+
+      </Head>
       <body className={orbitron.className}>
         <Navigation/>
         <div>{children}</div>
