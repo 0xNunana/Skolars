@@ -5,6 +5,11 @@ const images = [
   '/file2.webp',
   '/file1.webp',
   '/stage.webp',
+  '/file3.jpg',
+
+  '/file5.jpg',
+  '/skulars.webp',
+  '/logo.png'
 
 ];
 

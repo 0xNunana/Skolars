@@ -1,12 +1,15 @@
+'use client'
 import Image from 'next/image'
-import React from 'react'
+import React,{useState} from 'react'
 
 const Navigation = () => {
+  const [ismenuOpen,setIsMenuOpen]=useState(false)
+
   return (
     <nav className='sticky top-0 bg-gradient-to-r from-transparent via-black/60 to-black/60 backdrop-blur-md z-50'>
     <div className='px-5 py-2 max-w-screen-2xl mx-auto flex justify-between '>
 <Image src='/logo.png' alt='Skulars logo' width={500} height={500} className='max-sm:w-[150px] w-[220px]'/>
-<ul className='flex gap-4 items-center text-[#D4AF37] text-xs md:text-base'>
+<ul className='hidden sm:flex gap-4 items-center text-[#d4af37] text-xs md:text-base'>
     <li>Home</li>
     <li>About Us</li>
     <li>Our Services</li>
@@ -19,6 +22,51 @@ const Navigation = () => {
 </svg>
     </button>
 </ul>
+
+{/* moblie screen */}
+<div className=' sm:hidden flex items-center justify-center'>
+{
+          ismenuOpen ? (<>
+            <button className=''>
+         
+          <svg className='w-8 h-8' onClick={()=>setIsMenuOpen(false)} fill="#d4af37" height="100px" width="100px" version="1.1" id="Layer_1"  
+	 viewBox="0 0 1792 1792" >
+<path d="M1082.2,896.6l410.2-410c51.5-51.5,51.5-134.6,0-186.1s-134.6-51.5-186.1,0l-410.2,410L486,300.4
+	c-51.5-51.5-134.6-51.5-186.1,0s-51.5,134.6,0,186.1l410.2,410l-410.2,410c-51.5,51.5-51.5,134.6,0,186.1
+	c51.6,51.5,135,51.5,186.1,0l410.2-410l410.2,410c51.5,51.5,134.6,51.5,186.1,0c51.1-51.5,51.1-134.6-0.5-186.2L1082.2,896.6z"/>
+</svg>
+        </button>
+          </>) :(<>  <button>
+ 
+            <svg width="100px" height="100px" viewBox="0 0 24 24" fill="none" className='w-8 h-8' onClick={()=>setIsMenuOpen(true)}>
+<g id="Menu / Menu_Alt_02">
+<path id="Vector" d="M11 17H19M5 12H19M11 7H19" stroke="#d4af37" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+</svg>
+          </button></>)
+        
+}
+{ismenuOpen && (
+    <div className='  bg-[#d4af37]/90 fixed inset-0 h-screen top-[60px] p-4 bottom-0 w-full sm:w-[50%] right-0 md:hidden '>
+
+    <div className='m-10 p-10 animate-slideDown bg-white rounded-sm '>
+   
+        <div className='grid gap-6 '>
+          <ul className='space-y-5 '>
+          <li>Home</li>
+    <li>About Us</li>
+    <li>Our Services</li>
+  
+    <li>Blog</li>
+    <li>Contact</li>
+              </ul>
+                
+              </div>
+              </div>
+              </div>)}
+                
+</div>
+
     </div>
     </nav>
 
