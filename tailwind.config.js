@@ -14,8 +14,41 @@ module.exports = {
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
           "hero":'url("/art.webp")'
       },
+      animation:{
+        hero:'backentry 5s forwards alternate',
+        'slideDown':'slideD 2s ease forwards',
+      },
+      keyframes:{
+        backentry:{
+          '0%':{
+            opacity:1,
+            transform:'scale(1.3) translateX(100px)'
+          },
+          '50%':{
+            opacity:1,
+            transform:'scale(1) '
+          },
+          '100%':{
+            opacity:1,
+            transform:'scale(1.1)'
+          }
+  
+        },
+        slideD:{
+          '0%':{
+            opacity:'0',
+transform:'translateY(-50px)'
+          },
+         
+          '100%':{
+            opacity:'1',
+            transform:'translateY(0)'
 
+          }
+        }
+      }
     },
+    
   },
   plugins: [],
 };
