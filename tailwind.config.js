@@ -22,7 +22,7 @@ module.exports = {
         backentry:{
           '0%':{
             opacity:1,
-            transform:'scale(1.3) translateX(100px)'
+            transform:'scale(1.3) '
           },
           '50%':{
             opacity:1,

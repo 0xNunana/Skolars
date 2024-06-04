@@ -15,7 +15,7 @@ const images = [
 
 const Hero = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
-const name= ['S','k','u','l','a','r','s']
+const name= ['S','k','o','l','a','r','s']
 const name2=['E','n','t','e','r','t','a','i','n','m','e','n','t']
   useEffect(() => {
     const interval = setInterval(() => {
@@ -30,7 +30,7 @@ const name2=['E','n','t','e','r','t','a','i','n','m','e','n','t']
       {images.map((image, index) => (
         <div
           key={index}
-          className={`absolute inset-0 bg-cover overflow-hidden ${index === currentImageIndex ? 'animate-hero' : 'opacity-0 scale-0'}`}
+          className={`absolute inset-0 bg-cover bg-black/50 overflow-hidden ${index === currentImageIndex ? 'animate-hero' : 'opacity-0 scale-0'}`}
           style={{ backgroundImage: `url(${image})` }}
         />
       ))}
