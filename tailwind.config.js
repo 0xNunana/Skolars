@@ -8,11 +8,18 @@ module.exports = {
   ],
   theme: {
     extend: {
+      colors:{
+        gold:'#D4AF37'
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
-          "hero":'url("/art.webp")'
+          "hero":'url("/art.webp")',
+          "update":'url("/bg-6.png")',
+          dot:'url("/bg-dot.png")',
+          menu: 'url("/dark.jpg")',
+          latest: 'url("/bg-map-2.png")',
       },
       animation:{
         hero:'backentry 5s forwards alternate',
