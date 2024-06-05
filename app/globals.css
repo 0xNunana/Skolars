@@ -27,6 +27,16 @@
   90%{transform:translate3d(0,-40px,0) }
 }
 
+@keyframes updown {
+  from{
+    animation-timing-function:cubic-bezier(.215,.61,.355,1);
+      transform:translate3d(0,-10px,0)
+  }
+  to {
+    animation-timing-function:cubic-bezier(.215,.61,.355,1);
+      transform:translate3d(0,0,0)
+  }
+}
 .char {
   opacity: 0;
   display: inline-block;
@@ -41,6 +51,14 @@
 }
 
 
+
+
+.socials:hover path {
+  fill: #d4af37;
+}
+.socials:hover{
+  animation: updown 3s ease-in-out alternate;
+}
 
 :root {
   --foreground-rgb: 0, 0, 0;

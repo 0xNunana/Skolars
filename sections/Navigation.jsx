@@ -1,5 +1,6 @@
 'use client'
 import Image from 'next/image'
+import Link from 'next/link'
 import React,{useState} from 'react'
 
 const Navigation = () => {
@@ -8,14 +9,32 @@ const Navigation = () => {
   return (
     <nav className='sticky top-0  backdrop-blur-md z-50 bg-[#d4af37]'>
     <div className='px-5 py-2 max-w-screen-2xl mx-auto flex justify-between '>
-<Image src='/logo.png' alt='Skulars logo' width={500} height={500} className='max-sm:w-[150px] w-[220px]'/>
+      <Link href='/'>
+      <Image src='/logo.png' alt='Skulars logo' width={500} height={500} className='max-sm:w-[150px] w-[220px]'/>
+      </Link>
+
 <ul className='hidden sm:flex gap-4 items-center  text-xs md:text-base '>
-    <li>Home</li>
-    <li>About Us</li>
-    <li>Our Services</li>
+  <Link href='/'>
+  <li>Home</li>
+  </Link>
   
+    <Link href='/About'>
+    <li>About Us</li>
+  </Link>
+
+    <Link href='/Services'>
+    <li>Our Services</li>
+  </Link>
+
+    <Link href='/Blog'>
     <li>Blog</li>
+  </Link>
+  
+    
+    <Link href='/Contact'>
     <li>Contact</li>
+  </Link>
+  
     <button>
     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M15.5 14H14.71L14.43 13.73C15.4439 12.554 16.0011 11.0527 16 9.5C16 8.21442 15.6188 6.95772 14.9046 5.8888C14.1903 4.81988 13.1752 3.98676 11.9874 3.49479C10.7997 3.00282 9.49279 2.87409 8.23192 
@@ -58,12 +77,27 @@ const Navigation = () => {
    
         <div className='grid gap-6 '>
           <ul className='space-y-5 '>
-          <li>Home</li>
-    <li>About Us</li>
-    <li>Our Services</li>
+          <Link href='/'>
+  <li>Home</li>
+  </Link>
   
+    <Link href='/About'>
+    <li>About Us</li>
+  </Link>
+
+    <Link href='/Services'>
+    <li>Our Services</li>
+  </Link>
+
+    <Link href='/Blog'>
     <li>Blog</li>
+  </Link>
+  
+    
+    <Link href='/Contact'>
     <li>Contact</li>
+  </Link>
+  
               </ul>
                 
               </div>

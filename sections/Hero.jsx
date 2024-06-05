@@ -45,18 +45,18 @@ const name2=['E','n','t','e','r','t','a','i','n','m','e','n','t']
           </h1>
            
           <h1 className='text-white text-4xl md:text-6xl lg:text-8xl font-bold mb-4'>
-          {name2.map((char,i)=>( <span key={i} className='char' style={{ animationDelay: `${i * 0.1}s`,}}>
+          {name2.map((char,i)=>( <span key={i} className='char' style={{ animationDelay: ` ${(7+i) * 0.1}s`,}}>
                    {char === '' ? '\u00A0' : char}
                 </span>))}
           </h1>
           <div className='flex items-center gap-2'>
-          <p className='text-[#D4AF37] text-lg md:text-xl mb-8 p-1 text-nowrap'>
+          <p className='text-[#D4AF37] text-sm sm:text-lg md:text-xl mb-8 p-1 text-nowrap'>
         Where stars are made.
           </p>
           <div>
             
           </div>
-          <div className='w-[80%] h-0.5 border-2 border-[#D4AF37]'/>
+          <div className='w-[80%] h-0.5 border-2 border-[#D4AF37] border-b-0 border-x-0'/>
           </div>
         
         
