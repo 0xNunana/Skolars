@@ -14,6 +14,10 @@ export const songs = [
       artiste:'Prinz Xtra',
       url: '/Music/Prince Xtra Buried inside Prod by Philsbitz.mp3',
     },
-   
-      
+    {
+      title: 'Mon Bébé',
+      artiste:'Prinz Xtra',
+      url: '/Music/Mon Bébé_Prinz Xtra.mp3',
+    },
+ 
   ];
