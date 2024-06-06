@@ -1,11 +1,12 @@
 'use client';
-import React, { useState,useEffect, useRef } from 'react';
+import React, { useState, useRef } from 'react';
 import { songs } from '@/Songs/List';
 
 const MusicPlayer = () => {
   const [currentSong, setCurrentSong] = useState(songs[0]);
   const [isPlaying, setIsPlaying] = useState(false);
   const audioRef = useRef(null);
+  
 
   const handlePlayPause = () => {
     if (isPlaying) {
@@ -15,7 +16,6 @@ const MusicPlayer = () => {
     }
     setIsPlaying(!isPlaying);
   };
-
   const handleSongSelect = (song) => {
     setCurrentSong(song);
     setIsPlaying(false);
@@ -35,37 +35,6 @@ const MusicPlayer = () => {
     link.click();
     document.body.removeChild(link);
   };
-
-  // const playNextSong = () => {
-  //   const currentIndex = songs.findIndex(song => song.title === currentSong.title);
-  //   const nextIndex = (currentIndex + 1) % songs.length;
-  //   const nextSong = songs[nextIndex];
-  //   setCurrentSong(nextSong);
-  //   setIsPlaying(false);
-  //   audioRef.current.pause();
-  //   audioRef.current.load();
-  //   audioRef.current.oncanplaythrough = () => {
-  //     audioRef.current.play();
-  //     setIsPlaying(true);
-  //   };
-  // };
-
-  // useEffect(() => {
-  //   const handleEnded = () => {
-  //     playNextSong();
-  //   };
-
-  //   const audioElement = audioRef.current;
-  //   if (audioElement) {
-  //     audioElement.addEventListener('ended', handleEnded);
-  //   }
-
-  //   return () => {
-  //     if (audioElement) {
-  //       audioElement.removeEventListener('ended', handleEnded);
-  //     }
-  //   };
-  // }, [currentSong]);
 
   return (
     <div className="min-w-[300px] md:min-w-[400px] min-h-[100px] mx-auto gap-2 shadow-md px-3 bg-player bg-white/70 rounded-md flex flex-col border border-gold text-black">
@@ -181,11 +150,11 @@ const MusicPlayer = () => {
             <li
               key={index}
               onClick={() => handleSongSelect(song)}
-              className="bg-white/90 px-2 text-xs md:text-base rounded-sm cursor-pointer flex justify-between items-center"
+              className="bg-white/90 px-2 py-1 text-xs md:text-base rounded-sm cursor-pointer flex justify-between items-center"
             >
               <p>{song.title}</p>
-              <div className='max-sm:py-1'>
-              {currentSong.title === song.title && isPlaying ? (
+              <div className='max-sm:my-1'>
+              {currentSong.title === song.title && isPlaying? (
             <div >
               <svg
                 version="1.1"
