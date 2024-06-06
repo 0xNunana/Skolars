@@ -4,14 +4,14 @@ import React from 'react'
 
 const page = () => {
   return (
-    <div className='min-h-screen'>
+    <div className='min-h-screen dark:text-black'>
         <div className='max-w-screen-2xl px-5 mx-auto  pt-20 '>
           <div className='grid md:grid-cols-3 gap-10 '>
             <div className='flex justify-center items-center'>
             <div className='space-y-5'>
-              <p className='text-3xl pb-2'>Ready to work with us?</p>
+              <p className='text-3xl pb-2 dark:text-white'>Ready to work with us?</p>
               <Link href='/Contact/#mail' className='pt-2'>
-              < button className='bg-gold font-semibold px-5 py-2 rounded-full text-nowrap '>
+              < button className=' bg-gold font-semibold px-5 py-2 rounded-full text-nowrap '>
                  Get In Touch 
               </button> 
                
