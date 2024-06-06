@@ -36,7 +36,7 @@ const MusicPlayer = () => {
   };
 
   return (
-    <div className="min-w-[300px] md:min-w-[400px] min-h-[100px] mx-auto gap-2 shadow-md px-3 bg-player bg-white/70 rounded-md flex flex-col border border-gold">
+    <div className="min-w-[300px] md:min-w-[400px] min-h-[100px] mx-auto gap-2 shadow-md px-3 bg-player bg-white/70 rounded-md flex flex-col border border-gold text-black">
       <div className="flex gap-4">
         <button onClick={handlePlayPause} className="">
           {isPlaying ? (
@@ -106,6 +106,11 @@ const MusicPlayer = () => {
   {currentSong.title}
 </h1>
           </div>
+          <div className='flex gap-2' >
+          <p className='text-[10px] text-gray-600'>By:</p>
+          <p className='text-black text-sm'>{currentSong.artiste}</p>
+          </div>
+       
 
 
             <audio ref={audioRef} className="">
@@ -144,9 +149,65 @@ const MusicPlayer = () => {
             <li
               key={index}
               onClick={() => handleSongSelect(song)}
-              className="bg-white/90 px-2 text-xs md:text-base rounded-sm cursor-pointer"
+              className="bg-white/90 px-2 text-xs md:text-base rounded-sm cursor-pointer flex justify-between items-center"
             >
-              {song.title}
+              <p>{song.title}</p>
+              <div>
+              {currentSong.title === song.title? (
+            <div>
+              <svg
+                version="1.1"
+                id="Capa_1"
+                className="w-3 h-3"
+                viewBox="0 0 512 512"
+              >
+                <path
+                  style={{ fill: 'white' }}
+                  d="M256,0C114.84,0,0,114.842,0,256s114.84,256,256,256c141.158,0,256-114.842,256-256S397.158,0,256,0z"
+                />
+                <path
+                  style={{ fill: 'white' }}
+                  d="M256,0v512c141.158,0,256-114.842,256-256S397.158,0,256,0z"
+                />
+                <path
+                  style={{ fill: '#D4AF37' }}
+                  d="M318.061,139.636c-12.853,0-23.273,10.42-23.273,23.273v186.182c0,12.853,10.42,23.273,23.273,23.273
+                c12.851,0,23.273-10.42,23.273-23.273V162.909C341.333,150.056,330.912,139.636,318.061,139.636z"
+                />
+                <path
+                  style={{ fill: '#D4AF37' }}
+                  d="M193.939,139.636c-12.853,0-23.273,10.42-23.273,23.273v186.182c0,12.853,10.42,23.273,23.273,23.273
+                c12.851,0,23.273-10.42,23.273-23.273V162.909C217.212,150.056,206.791,139.636,193.939,139.636z"
+                />
+              </svg>
+            </div>
+          ) : (
+            <div>
+              <button className=" ">
+                <svg
+                  version="1.1"
+                  id="Capa_1 c"
+                  className="w-3 h-3"
+                  viewBox="0 0 58 58"
+                >
+                  <circle style={{ fill: '#D4AF37' }} cx="29" cy="29" r="29" />
+                  <g>
+                    <polygon
+                      style={{ fill: '#FFFFFF' }}
+                      points="44,29 22,44 22,29.273 22,14 	"
+                    />
+                    <path
+                      style={{ fill: '#FFFFFF' }}
+                      d="M22,45c-0.16,0-0.321-0.038-0.467-0.116C21.205,44.711,21,44.371,21,44V14
+                    c0-0.371,0.205-0.711,0.533-0.884c0.328-0.174,0.724-0.15,1.031,0.058l22,15C44.836,28.36,45,28.669,45,29s-0.164,0.64-0.437,0.826
+                    l-22,15C22.394,44.941,22.197,45,22,45z M23,15.893v26.215L42.225,29L23,15.893z"
+                    />
+                  </g>
+                </svg>
+              </button>
+            </div>
+          )}
+              </div>
             </li>
           ))}
         </ul>

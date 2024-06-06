@@ -1,20 +1,19 @@
 export const songs = [
     {
-      title: 'Manodzi',
-      url: '/Music/Stonebwoy-Manodzi.mp3',
+      title: 'Money Icon',
+      artiste:'Prinz Xtra',
+      url: '/Music/MONEY-ICON_Prinz_Xtra.mp3',
     },
     {
-        title: 'Lonely At The Top',
-        url: 'Music/Asake_-_Lonely_At_The_Top_FlexyOkay.com.mp3',
-      },
-      {
-        title: 'The Nights',
-        url: '/Music/Avicii_-_The_Nights_(Jesusful.com).mp3',
-      },
-     
-      {
-        title: 'We-Overcome-the-Wind',
-        url: '/Music/Waloyo-Yamoni-—-We-Overcome-the-Wind.mp3',
-      },
+      title: 'Alele',
+      artiste:'Prinz Xtra',
+      url: '/Music/Alele_Prinz_Xtra.mp3',
+    },
+    {
+      title: 'Buried Inside',
+      artiste:'Prinz Xtra',
+      url: '/Music/Prince Xtra Buried inside Prod by Philsbitz.mp3',
+    },
+   
       
   ];
