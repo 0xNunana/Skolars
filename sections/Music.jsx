@@ -1,5 +1,5 @@
 'use client';
-import React, { useState, useRef } from 'react';
+import React, { useState,useEffect, useRef } from 'react';
 import { songs } from '@/Songs/List';
 
 const MusicPlayer = () => {
@@ -15,6 +15,7 @@ const MusicPlayer = () => {
     }
     setIsPlaying(!isPlaying);
   };
+
   const handleSongSelect = (song) => {
     setCurrentSong(song);
     setIsPlaying(false);
@@ -34,6 +35,37 @@ const MusicPlayer = () => {
     link.click();
     document.body.removeChild(link);
   };
+
+  // const playNextSong = () => {
+  //   const currentIndex = songs.findIndex(song => song.title === currentSong.title);
+  //   const nextIndex = (currentIndex + 1) % songs.length;
+  //   const nextSong = songs[nextIndex];
+  //   setCurrentSong(nextSong);
+  //   setIsPlaying(false);
+  //   audioRef.current.pause();
+  //   audioRef.current.load();
+  //   audioRef.current.oncanplaythrough = () => {
+  //     audioRef.current.play();
+  //     setIsPlaying(true);
+  //   };
+  // };
+
+  // useEffect(() => {
+  //   const handleEnded = () => {
+  //     playNextSong();
+  //   };
+
+  //   const audioElement = audioRef.current;
+  //   if (audioElement) {
+  //     audioElement.addEventListener('ended', handleEnded);
+  //   }
+
+  //   return () => {
+  //     if (audioElement) {
+  //       audioElement.removeEventListener('ended', handleEnded);
+  //     }
+  //   };
+  // }, [currentSong]);
 
   return (
     <div className="min-w-[300px] md:min-w-[400px] min-h-[100px] mx-auto gap-2 shadow-md px-3 bg-player bg-white/70 rounded-md flex flex-col border border-gold text-black">
@@ -152,13 +184,13 @@ const MusicPlayer = () => {
               className="bg-white/90 px-2 text-xs md:text-base rounded-sm cursor-pointer flex justify-between items-center"
             >
               <p>{song.title}</p>
-              <div>
-              {currentSong.title === song.title? (
-            <div>
+              <div className='max-sm:py-1'>
+              {currentSong.title === song.title && isPlaying ? (
+            <div >
               <svg
                 version="1.1"
                 id="Capa_1"
-                className="w-3 h-3"
+                className="w-4 h-4"
                 viewBox="0 0 512 512"
               >
                 <path
@@ -187,7 +219,7 @@ const MusicPlayer = () => {
                 <svg
                   version="1.1"
                   id="Capa_1 c"
-                  className="w-3 h-3"
+                  className="w-4 h-4"
                   viewBox="0 0 58 58"
                 >
                   <circle style={{ fill: '#D4AF37' }} cx="29" cy="29" r="29" />
