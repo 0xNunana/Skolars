@@ -20,6 +20,7 @@ module.exports = {
           dot:'url("/bg-dot.png")',
           menu: 'url("/dark.jpg")',
           latest: 'url("/bg-map-2.png")',
+          player:'url("/logo.png")'
       },
       animation:{
         hero:'backentry 5s forwards alternate',
