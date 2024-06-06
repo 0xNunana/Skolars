@@ -2,7 +2,7 @@ import React from 'react'
 
 const page = () => {
   return (
-    <div className='min-h-screen'>
+    <div className='min-h-screen dark:text-white text-black'>
         <div className='max-w-screen-2xl p-5 mx-auto space-y-5 text-xl'>
        <p>In the vast landscape of the music industry, finding a label that not only understands your artistic vision but also nurtures it with passion and dedication is like discovering a hidden treasure. Enter Skolars Entertainment,a beacon of creativity and authenticity in the ever-evolving world of music.
 

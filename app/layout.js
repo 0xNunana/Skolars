@@ -26,7 +26,7 @@ export default function RootLayout({ children }) {
         />
 
       </Head>
-      <body className={orbitron.className}>
+      <body className={`${orbitron.className} `}>
         <Navigation/>
         <div>{children}</div>
         <Footer/>
