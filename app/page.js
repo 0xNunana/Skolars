@@ -1,11 +1,7 @@
 
 
 import Hero from "@/sections/Hero";
-import Music from "@/sections/Music";
-
-
 import Updates from "@/sections/Updates";
-import Videos from "@/sections/Videos";
 
 
 export default function Home() {
@@ -16,7 +12,7 @@ export default function Home() {
 <Hero/>
 
 <Updates/>
-<Music/>
+
 {/* <Videos/> */}
     </main>
   );

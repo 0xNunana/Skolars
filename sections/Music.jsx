@@ -36,7 +36,7 @@ const MusicPlayer = () => {
   };
 
   return (
-    <div className="min-w-[300px] md:min-w-[400px] min-h-[100px] mx-auto gap-2 shadow-md px-3 bg-player bg-white/70 rounded-md flex flex-col">
+    <div className="min-w-[300px] md:min-w-[400px] min-h-[100px] mx-auto gap-2 shadow-md px-3 bg-player bg-white/70 rounded-md flex flex-col border border-gold">
       <div className="flex gap-4">
         <button onClick={handlePlayPause} className="">
           {isPlaying ? (
@@ -101,9 +101,13 @@ const MusicPlayer = () => {
             ) : (
               <p className="text-xs md:text-base">Play Now</p>
             )}
-            <h1 className="bg-gold px-4 py-1 text-xs md:text-base rounded-md">
-              {currentSong.title}
-            </h1>
+          <div className='bg-gold px-2 py-1 w-[200px]'>
+          <h1 className="w-[90%] text-xs md:text-base rounded-md overflow-hidden text-ellipsis whitespace-nowrap">
+  {currentSong.title}
+</h1>
+          </div>
+
+
             <audio ref={audioRef} className="">
               <source src={currentSong.url} type="audio/mp3" />
               Your browser does not support the audio element.
