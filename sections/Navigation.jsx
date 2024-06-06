@@ -26,9 +26,6 @@ const Navigation = () => {
     <li>Our Services</li>
   </Link>
 
-    <Link href='/Blog'>
-    <li>Blog</li>
-  </Link>
   
     
     <Link href='/Contact'>
@@ -89,9 +86,7 @@ const Navigation = () => {
     <li>Our Services</li>
   </Link>
 
-    <Link href='/Blog'>
-    <li>Blog</li>
-  </Link>
+   
   
     
     <Link href='/Contact'>
