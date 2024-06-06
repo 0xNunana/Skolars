@@ -157,15 +157,15 @@ const page = () => {
                 </div>
                 <div>
                   <label>Phone Number</label>
-                  <input type='tel' placeholder='Genesis Artiste' className='block w-full p-2 rounded-md'/>
+                  <input type='tel' placeholder='+233240000000' className='block w-full p-2 rounded-md'/>
                 </div>
                 <div>
                   <label>Email Address</label>
-                  <input type='text' placeholder='Genesis Artiste' className='block w-full p-2 rounded-md'/>
+                  <input type='text' placeholder='john@example.com' className='block w-full p-2 rounded-md'/>
                 </div>
                 <div>
                   <label>Subject</label>
-                  <input type='text' placeholder='Genesis Artiste' className='block w-full p-2 rounded-md'/>
+                  <input type='text' placeholder='Branding' className='block w-full p-2 rounded-md'/>
                 </div>
               </div>
             
