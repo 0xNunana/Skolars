@@ -9,7 +9,7 @@ module.exports = {
   theme: {
     extend: {
       colors:{
-        gold:'#D4AF37'
+        gold:'#3c90d8'
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",

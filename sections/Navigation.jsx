@@ -7,7 +7,7 @@ const Navigation = () => {
   const [ismenuOpen,setIsMenuOpen]=useState(false)
 
   return (
-    <nav className='sticky top-0  backdrop-blur-md z-50 bg-[#d4af37] text-black'>
+    <nav className='sticky top-0  backdrop-blur-md z-50 bg-gold/50 text-black'>
     <div className='px-5 py-2 max-w-screen-2xl mx-auto flex justify-between '>
       <Link href='/'>
       <Image src='/logo.png' alt='Skulars logo' width={500} height={500} className='max-sm:w-[150px] w-[220px]'/>
@@ -68,7 +68,7 @@ const Navigation = () => {
         
 }
 {ismenuOpen && (
-    <div className='  bg-[#d4af37] fixed inset-0 h-screen top-[60px] p-4 bottom-0 w-full sm:w-[50%] right-0 md:hidden '>
+    <div className='  bg-gold fixed inset-0 h-screen top-[60px] p-4 bottom-0 w-full sm:w-[50%] right-0 md:hidden '>
 
     <div className='m-10 p-10 animate-slideDown bg-white rounded-sm '>
    
