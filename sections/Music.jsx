@@ -1,6 +1,6 @@
 'use client';
 import React, { useState, useRef } from 'react';
-import { songs } from '@/Songs/List';
+import { songs } from '@/Data/SongList';
 
 const MusicPlayer = () => {
   const [currentSong, setCurrentSong] = useState(songs[0]);
@@ -28,7 +28,7 @@ const MusicPlayer = () => {
   };
 
   const handleDownload = () => {
-    const link = document.createElement('a');
+    const link = document.createElement('a');  // '/logo.png'
     link.href = currentSong.url;
     link.download = currentSong.title;
     document.body.appendChild(link);

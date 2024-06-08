@@ -74,22 +74,22 @@ const Navigation = () => {
    
         <div className='grid gap-6 '>
           <ul className='space-y-5 '>
-          <Link href='/'>
+          <Link href='/' onClick={()=>setIsMenuOpen(false)}>
   <li>Home</li>
   </Link>
   
-    <Link href='/About'>
+    <Link href='/About' onClick={()=>setIsMenuOpen(false)}>
     <li>About Us</li>
   </Link>
 
-    <Link href='/Services'>
+    <Link href='/Services' onClick={()=>setIsMenuOpen(false)}>
     <li>Our Services</li>
   </Link>
 
    
   
     
-    <Link href='/Contact'>
+    <Link href='/Contact' onClick={()=>setIsMenuOpen(false)}>
     <li>Contact</li>
   </Link>
   

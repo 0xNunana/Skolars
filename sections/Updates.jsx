@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import React from 'react'
+import Link from 'next/link'
 
 const Updates = () => {
   return (
@@ -8,18 +9,18 @@ const Updates = () => {
 <div className='grid sm:grid-cols-5 md:grid-cols-7 gap-3'>
 <div className=' col-span-1 sm:col-span-3 justify-center items-center flex w-full border-2 border-[#3c90d8] bg-white rounded-tl-3xl sm:rounded-tl-[10%] rounded-md'>
     <div className='py-5 space-y-4'>
-    <p className='font-semibold text-2xl sm:3xl md:4xl lg:text-5xl '>Latest Updates</p>
+    <p className='font-semibold text-2xl sm:3xl md:4xl lg:text-5xl '>Profiles</p>
     <div className='flex justify-center items-center'>
-    <button className='border-2 px-5 py-2 border-[#3c90d8] text-sm md:text-base hover:bg-[#3c90d8] hover:text-white transition-colors'>
+    <Link href='/Profile' className='border-2 px-5 py-2 border-[#3c90d8] text-sm md:text-base hover:bg-[#3c90d8] hover:text-white transition-colors'>
         SEE MORE
-    </button>
+    </Link>
     </div>
 
     </div>
  
 </div>
 <div className='col-span-1 sm:col-span-2   relative group overflow-hidden transition-all max-sm:h-40'>
-    <Image className='w-full object-cover group-hover:scale-105 group-hover:delay-100' src='/file4.jpg' alt='update 1' width={300} height={300}/>
+    <Image className='w-full object-cover group-hover:scale-105 group-hover:delay-100' src='/new1.jpg' alt='update 1' width={300} height={300}/>
     <div className='hidden group-hover:flex group-hover:absolute inset-0 bg-black/60  justify-center items-center'>
     <p className='  text-white py-2'>EVENTS</p>
     </div>
