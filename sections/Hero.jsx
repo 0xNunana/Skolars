@@ -3,14 +3,17 @@ import React, { useState, useEffect } from 'react';
 import MusicPlayer from './Music';
 
 const images = [
+  '/logo.png',
   '/file2.webp',
-  '/file1.webp',
-  '/stage.webp',
+  // '/file1.webp',
+  // '/stage.webp',
   '/file3.jpg',
+  // '/new1.jpg',
+  // '/new2.jpg',
 
   '/file5.jpg',
   '/skulars.webp',
-  '/logo.png'
+  // '/logo.png'
 
 ];
 
