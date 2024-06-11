@@ -70,7 +70,7 @@ const MusicPlayer = () => {
             </div>
           ) : (
             <div>
-              <button className="play animate-pulse">
+              <div className="play animate-pulse">
                 <svg
                   version="1.1"
                   id="Capa_1 c"
@@ -91,7 +91,7 @@ const MusicPlayer = () => {
                     />
                   </g>
                 </svg>
-              </button>
+              </div>
             </div>
           )}
         </button>
