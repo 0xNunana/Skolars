@@ -3,16 +3,15 @@ import React, { useState, useEffect } from 'react';
 import MusicPlayer from './Music';
 
 const images = [
-  '/logo.png',
-  '/file2.webp',
-  // '/file1.webp',
-  // '/stage.webp',
-  '/file3.jpg',
-  // '/new1.jpg',
-  // '/new2.jpg',
 
-  '/file5.jpg',
-  '/skulars.webp',
+  '/file15.webp',
+  '/file2.webp',
+
+  '/file7.webp',
+
+  '/file3.webp',
+  '/file5.webp',
+'/file8.webp',
   // '/logo.png'
 
 ];
@@ -39,16 +38,16 @@ const name2=['E','n','t','e','r','t','a','i','n','m','e','n','t']
         />
       ))}
       <div className='absolute inset-0 bg-black bg-opacity-50 flex items-center   px-4'>
-        <div className='grid md:grid-cols-2 w-full '>
-        <div className='p-6 rounded-lg   '>
+        <div className='grid   lg:grid-cols-3 w-full '>
+        <div className='p-6 rounded-lg  lg:col-span-2 '>
          
-          <h1 className='text-white text-4xl md:text-6xl lg:text-8xl font-bold mb-4'>
+          <h1 className='text-white text-4xl md:text-6xl lg:text-7xl xl:text-8xl font-bold mb-4'>
           {name.map((char,i)=>( <span key={i} className='char' style={{ animationDelay: `${i * 0.1}s`,}}>
                    {char === '' ? '\u00A0' : char}
                 </span>))}
           </h1>
            
-          <h1 className='text-white text-4xl md:text-6xl lg:text-8xl font-bold mb-4'>
+          <h1 className='text-white text-4xl md:text-6xl lg:text-7xl xl:text-8xl font-bold mb-4'>
           {name2.map((char,i)=>( <span key={i} className='char' style={{ animationDelay: ` ${(7+i) * 0.1}s`,}}>
                    {char === '' ? '\u00A0' : char}
                 </span>))}
@@ -60,7 +59,7 @@ const name2=['E','n','t','e','r','t','a','i','n','m','e','n','t']
           <div>
             
           </div>
-          <div className='w-[80%] h-0.5 border-2 border-[#D4AF37] border-b-0 border-x-0'/>
+          <div className='w-[80%] md:w-[65%] lg:w-[50%] h-0.5 border-2 border-[#D4AF37] border-b-0 border-x-0'/>
           </div>
         
         
