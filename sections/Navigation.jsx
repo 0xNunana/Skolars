@@ -10,7 +10,7 @@ const Navigation = () => {
     <nav className='sticky top-0  backdrop-blur-md z-50 bg-gold/50 text-black'>
     <div className='px-5 py-2 max-w-screen-2xl mx-auto flex justify-between '>
       <Link href='/'>
-      <Image src='/logo.png' alt='Skulars logo' width={500} height={500} className='max-sm:w-[150px] w-[220px]'/>
+      <Image src='/logo.png' alt='Skulars logo' width={500} height={500} className='max-sm:w-[150px] w-[220px]' priority/>
       </Link>
 
 <ul className='hidden sm:flex gap-4 items-center  text-xs md:text-base '>

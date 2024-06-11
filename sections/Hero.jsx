@@ -1,6 +1,7 @@
 'use client'
 import React, { useState, useEffect } from 'react';
 import MusicPlayer from './Music';
+import Image from 'next/image';
 
 const images = [
 
@@ -18,8 +19,11 @@ const images = [
 
 const Hero = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
+
 const name= ['S','k','o','l','a','r','s']
 const name2=['E','n','t','e','r','t','a','i','n','m','e','n','t']
+
+
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
@@ -30,13 +34,31 @@ const name2=['E','n','t','e','r','t','a','i','n','m','e','n','t']
 
   return (
     <div className='relative w-full min-h-screen overflow-hidden'>
-      {images.map((image, index) => (
+      
+                       {images.map((image, index) => (
         <div
           key={index}
           className={`absolute inset-0 bg-cover bg-black/50 overflow-hidden ${index === currentImageIndex ? 'animate-hero' : 'opacity-0 scale-0'}`}
           style={{ backgroundImage: `url(${image})` }}
-        />
+        >
+          <Image
+            src={image}
+       priority
+       height={100}
+       width={100}
+            alt=""
+            style={{ display: 'none' }}
+            onLoad={() => {
+              const bgDiv = document.querySelector(`.image-bg-${index}`);
+              if (bgDiv) {
+                bgDiv.style.backgroundImage = `url(${image})`;
+              }
+            }}
+            className={`image-bg-${index}`}
+          />
+        </div>
       ))}
+
       <div className='absolute inset-0 bg-black bg-opacity-50 flex items-center   px-4'>
         <div className='grid   lg:grid-cols-3 w-full '>
         <div className='p-6 rounded-lg  lg:col-span-2 '>
