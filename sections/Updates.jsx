@@ -36,7 +36,7 @@ const Updates = () => {
     <Image className='object-cover w-full ' src='/skulars.webp' alt='update 1' width={300} height={300} />
 </div>
 <div className='sm:col-span-2 flex items-center justify-center   relative group overflow-hidden transition-all max-sm:h-40'>
-    <Image className='object-cover w-full h-full  group-hover:scale-105 group-hover:delay-100' src='/file3.jpg' alt='update 1' width={300} height={300}/>
+    <Image className='object-cover w-full h-full  group-hover:scale-105 group-hover:delay-100' src='/file3.webp' alt='update 1' width={300} height={300}/>
     <div className='hidden group-hover:flex group-hover:absolute inset-0 bg-black/60  justify-center items-center'>
     <p className='  text-white py-2'>VIDEO SHOOTS</p>
     </div>

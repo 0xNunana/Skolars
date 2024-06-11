@@ -37,7 +37,7 @@ const MusicPlayer = () => {
   };
 
   return (
-    <div className="min-w-[300px] md:min-w-[400px] min-h-[100px] mx-auto gap-2 shadow-md px-3 bg-player bg-white/70 rounded-md flex flex-col border border-gold text-black">
+    <div className="min-w-[300px] min-h-[100px] mx-auto gap-2 shadow-md px-3 bg-player bg-white/70 rounded-md flex flex-col border border-gold text-black">
       <div className="flex gap-4">
         <button onClick={handlePlayPause} className="">
           {isPlaying ? (
@@ -95,14 +95,14 @@ const MusicPlayer = () => {
             </div>
           )}
         </button>
-        <div className="flex justify-center items-center mt-1 flex-grow">
-          <div className="w-full bg-white px-4 py-2 space-y-1 md:space-y-3 rounded-md">
+        <div className="flex flex-grow items-center mt-1 ">
+          <div className=" bg-white px-4 py-2 space-y-2 md:space-y-3 rounded-md flex-grow">
             {isPlaying ? (
               <p className="text-xs md:text-base">Now Playing</p>
             ) : (
               <p className="text-xs md:text-base">Play Now</p>
             )}
-          <div className='bg-gold px-2 py-1 w-[200px]'>
+          <div className='bg-gold px-2 py-1'>
           <h1 className="w-[90%] text-xs md:text-base rounded-md overflow-hidden text-ellipsis whitespace-nowrap">
   {currentSong.title}
 </h1>
@@ -144,7 +144,7 @@ const MusicPlayer = () => {
         </div>
       </div>
 
-      <div className="w-full col-span-3 bg-black/50 rounded-md p-2 max-h-40 overflow-y-scroll my-4 ">
+      <div className=" col-span-3 bg-black/50 rounded-md p-2 max-h-40 overflow-y-scroll my-4 ">
         <ul className="space-y-1">
           {songs.map((song, index) => (
             <li
