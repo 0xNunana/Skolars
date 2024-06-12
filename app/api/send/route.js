@@ -18,14 +18,14 @@ export async function POST(request) {
     });
 
     if (error) {
-      console.log(error);
+   
       return new Response(JSON.stringify({ error }), { status: 500 });
     }
 
     return new Response(JSON.stringify({message:'Email sent successfully'}), { status: 200, headers: { 'Content-Type': 'application/json' } });
 
   } catch (error) {
-    console.log(error);
+ 
     return new Response(JSON.stringify({ error: 'Error sending message' }), { status: 500, headers: { 'Content-Type': 'application/json' } });
   }
 }

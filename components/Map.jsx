@@ -12,7 +12,7 @@ const Maps = () => {
   }
 
   return (
-    <APIProvider apiKey={apiKey} onLoad={() => console.log('Maps API has loaded.')}>
+    <APIProvider apiKey={apiKey} >
       <Map
         defaultZoom={12}
         defaultCenter={{ lng: -0.1700, lat: 5.8000 }}

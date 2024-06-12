@@ -37,7 +37,8 @@ const page = () => {
 
     const result = await response.json();
     setSuccess(result)
-    console.log(result);
+    setFormData('')
+  
   };
 
   return (
