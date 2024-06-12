@@ -12,7 +12,7 @@ export const metadata = {
   description: "Discover Skolars Entertainment - Your one-stop destination for music, artiste management, and record production.",
   keywords: 'Music, Artiste, Artiste Management, Manager, Record, Skolars Entertainment, Music Production, Music Management, Video Production, Studio, Quality music, Afrobeats,',
   category: 'Entertainment',
-  metadataBase: new URL('https://skolars.vercel.app'),
+  metadataBase: new URL('https://www.skolarsentertainment.com'),
   openGraph: {
     type: "website",
     title: "Skolars Entertainment",
@@ -20,7 +20,7 @@ export const metadata = {
     siteName: "Skolars Entertainment",
     images: [
       {
-        url: 'https://skolars.vercel.app/logo.png',
+        url: 'https://www.skolarsentertainment.com/logo.png',
         width: 800,
         height: 600,
         alt: 'Skolars Entertainment Logo',
@@ -34,7 +34,7 @@ export const metadata = {
     description: 'Discover Skolars Entertainment - Your one-stop destination for music, artiste management, and record production.',
     images: [
       {
-        url: 'https://skolars.vercel.app/logo.png',
+        url: 'https://www.skolarsentertainment.com/logo.png',
         alt: 'Skolars Entertainment Logo',
       },
     ],
