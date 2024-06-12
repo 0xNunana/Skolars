@@ -1,6 +1,5 @@
 export const images = [
 
-    '/file15.webp',
     '/file2.webp',
     '/file7.webp',
 
