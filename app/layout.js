@@ -20,7 +20,7 @@ export const metadata = {
     siteName: "Skolars Entertainment",
     images: [
       {
-        url: 'https://www.skolarsentertainment.com/logo.png',
+        url: 'https://www.skolarsentertainment.com/preview.png',
         width: 800,
         height: 600,
         alt: 'Skolars Entertainment Logo',
@@ -34,7 +34,7 @@ export const metadata = {
     description: 'Discover Skolars Entertainment - Your one-stop destination for music, artiste management, and record production.',
     images: [
       {
-        url: 'https://www.skolarsentertainment.com/logo.png',
+        url: 'https://www.skolarsentertainment.com/preview.png',
         alt: 'Skolars Entertainment Logo',
       },
     ],
