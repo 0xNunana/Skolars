@@ -5,10 +5,10 @@ export const profiles = [
       image: '/file1.webp',
       name: 'Prinz Xtra',
       link: 'Prinz_Xtra',
-      bio: 'Prinz Xtra is a versatile artist with a knack for blending genres.',
+      bio: 'Prinz xtra is a singer/Songwriter who creates Afro pop music that makes you relate to life and love at the same time, he is know for his vocals and honest storytelling, he is Driven by passion.',
       socialLinks: {
-        twitter: 'https://twitter.com/prinzxtra',
-        instagram: 'https://instagram.com/prinzxtra',
+        twitter: 'https://twitter.com/prinz_xtra1',
+        instagram: 'https://instagram.com/prinz-xtra',
       },
       tracks:[
       'Money Icon','Alele','Buried Inside','Mon Bébé',
@@ -16,13 +16,13 @@ export const profiles = [
       ]
     },
     {
-      image: '/new1.jpg',
-      name: 'King G',
+      image: '/file10.webp',
+      name: 'King-G',
       link: 'King_G',
-      bio: 'King G is known for his powerful lyrics and captivating performances.',
+      bio: 'Mr Too Much Grace. I am winning souls for the kingdom of God through my music.',
       socialLinks: {
-        twitter: 'https://twitter.com/kingg',
-        instagram: 'https://instagram.com/kingg',
+        twitter: 'https://twitter.com/',
+        instagram: 'https://instagram.com/king.g_official',
       },
       tracks:[
       'You Di Do For Me','Grateful'
