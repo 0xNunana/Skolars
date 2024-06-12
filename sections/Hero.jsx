@@ -2,20 +2,9 @@
 import React, { useState, useEffect } from 'react';
 import MusicPlayer from './Music';
 import Image from 'next/image';
+import { images } from '@/Data/HeroImages';
 
-const images = [
 
-  '/file15.webp',
-  '/file2.webp',
-
-  '/file7.webp',
-
-  '/file3.webp',
-  '/file5.webp',
-'/file8.webp',
-  // '/logo.png'
-
-];
 
 const Hero = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);

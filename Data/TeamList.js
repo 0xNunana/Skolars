@@ -1,12 +1,12 @@
 export const teams = [
     {
-      image: '/file1.webp',
+      image: '/genesis.JPG',
       name: 'Genesis',
       link: 'Genesis',
-      bio: 'Prinz Xtra is a versatile artist with a knack for blending genres.',
+      bio: 'Music lover and entrepreneur turning the wildest dreams into real life experiences',
       socialLinks: {
-        twitter: 'https://twitter.com/prinzxtra',
-        instagram: 'https://instagram.com/prinzxtra',
+        twitter: 'https://twitter.com/gensijay',
+        instagram: 'https://instagram.com/gensijay',
       },
   position:'CEO'
     },
@@ -14,9 +14,8 @@ export const teams = [
       image: '/chris.jpeg',
       name: 'Nyinevi Christian Kekeli',
       link: 'Chris',
-      bio: `Nyinevi Christian Kekeli was born in 3rd January, 1999 at Kwamoso in the Eastern Region. He is a student teacher
-       in Mount Mary College of Education, Somanya. He is currently the Public Relation Officer of the College 
-       (Legon Afflicted). He also the French Students  Organizer at his college. He is the road manager at Skolars Entertainment, 
+      bio: `He is currently the Public Relation Officer of the Education Department of the University of Ghana( Mount Mary College).
+       He also the French Students  Organizer at his college. He is the road manager at Skolars Entertainment, 
        an instrumentalist (i.e. drummer and a lead guitarist) and also a Radio presenter at Rite Fm.
       He is fluent in  English, French, Ewe, Dangbe and Twi.`,
       socialLinks: {
@@ -37,16 +36,27 @@ export const teams = [
   position:'Film Director'
     },
     {
-      image: '/Samuel.jpeg',
-      name: 'Samuel Boadu Ampofo',
-      link: 'Samuel',
-      bio: `Adventurous `,
+      image: '/jem.jpeg',
+      name: 'Jemima Mensah',
+      link: 'Jemima',
+      bio: ` Managing both artists and Brand's image, I also specialise in promoting activities to enhance visibility and public awareness. I am creative, Intuitive and sensitive. outside of work, I love Nature and like exploring.`,
       socialLinks: {
-        twitter: 'https://twitter.com/khay curry',
-        instagram: '',
+        twitter: 'https://twitter.com/',
+        instagram: 'https://instagram.com/ama_brew_otabil',
       },
-  position:' Marketer'
+  position:'PR & Publicist'
     },
+  //   {
+  //     image: '/Samuel.jpeg',
+  //     name: 'Samuel Boadu Ampofo',
+  //     link: 'Samuel',
+  //     bio: `Adventurous `,
+  //     socialLinks: {
+  //       twitter: 'https://twitter.com/khay curry',
+  //       instagram: '',
+  //     },
+  // position:' Marketer'
+  //   },
     {
       image: '/smoke.jpeg',
       name: 'Francis Agbeke (Smoke)',
