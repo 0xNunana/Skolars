@@ -69,6 +69,17 @@ export const teams = [
   position:' Contract Admin'
     },
     {
+      image: '/mel.jpeg',
+      name: ' Melody Otima Ayisi ',
+      link: 'Melody',
+      bio: `A Baker, PR and an Artist Manager with a keen eye for talent and a heart full of passion for music. `,
+      socialLinks: {
+        twitter: 'https://twitter.com/@AyisiMelody',
+        instagram: 'https://instagram.com/melody_ayisi',
+      },
+  position:' Records/Artist Manager '
+    },
+    {
       image: '/nathan.jpeg',
       name: 'Nathan O. Anokye',
       link: 'Nathan',
