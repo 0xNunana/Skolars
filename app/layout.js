@@ -9,14 +9,14 @@ const orbitron =Orbitron({subsets:["latin"]})
 
 export const metadata = {
   title: "Skolars Entertainment",
-  description: "Discover Skolars Entertainment - Your one-stop destination for music, artiste management, and record production.",
+  description: "Discover Skolars Entertainment - Where stars are made",
   keywords: 'Music, Artiste, Artiste Management, Manager, Record, Skolars Entertainment, Music Production, Music Management, Video Production, Studio, Quality music, Afrobeats,',
   category: 'Entertainment',
   metadataBase: new URL('https://www.skolarsentertainment.com'),
   openGraph: {
     type: "website",
     title: "Skolars Entertainment",
-    description: "Discover Skolars Entertainment - Your one-stop destination for music, artiste management, and record production.",
+    description: "Discover Skolars Entertainment - Where stars are made",
     siteName: "Skolars Entertainment",
     images: [
       {
@@ -31,7 +31,7 @@ export const metadata = {
     card: 'summary_large_image',
     site: '@skolars_ent',
     title: 'Skolars Entertainment',
-    description: 'Discover Skolars Entertainment - Your one-stop destination for music, artiste management, and record production.',
+    description: 'Discover Skolars Entertainment - Where stars are made',
     images: [
       {
         url: 'https://www.skolarsentertainment.com/preview.png',
