@@ -16,7 +16,7 @@ export const profiles = [
       ]
     },
     {
-      image: '/file10.webp',
+      image: '/file9.webp',
       name: 'King-G',
       link: 'King_G',
       bio: 'Mr Too Much Grace. I am winning souls for the kingdom of God through my music.',
@@ -25,7 +25,7 @@ export const profiles = [
         instagram: 'https://instagram.com/king.g_official',
       },
       tracks:[
-      'You Di Do For Me','Grateful'
+      'You Di Do For Me','Grateful','I Can Not Run','Melody','Shawer Love'
       
         ]
     },
