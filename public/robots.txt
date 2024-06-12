@@ -3,4 +3,4 @@ User-agent: *
 Allow: /
 
 
-Sitemap: https://skolars.vercel.app/sitemap.xml
+Sitemap: https://www.skolarsentertainment.com/sitemap.xml
