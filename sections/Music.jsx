@@ -1,12 +1,23 @@
 'use client';
-import React, { useState, useRef } from 'react';
+import React, { useState, useRef,useEffect } from 'react';
 import { songs } from '@/Data/SongList';
 
+const getRandomSong = () => {
+  const randomIndex = Math.floor(Math.random() * songs.length);
+  return songs[randomIndex];
+};
+
+
 const MusicPlayer = () => {
-  const [currentSong, setCurrentSong] = useState(songs[0]);
+  const [currentSong, setCurrentSong] = useState(null);
   const [isPlaying, setIsPlaying] = useState(false);
   const audioRef = useRef(null);
   
+
+
+  useEffect(() => {
+    setCurrentSong(getRandomSong());
+  }, []);
 
   const handlePlayPause = () => {
     if (isPlaying) {
@@ -35,6 +46,221 @@ const MusicPlayer = () => {
     link.click();
     document.body.removeChild(link);
   };
+  if (!currentSong) {
+    return (
+      <div className="min-w-[300px] min-h-[100px] mx-auto gap-2 shadow-md px-3 bg-player bg-white/70 rounded-md flex flex-col border border-gold text-black">
+      <div className="flex gap-4">
+        <button  className="">
+        
+            <div>
+              <div className="play animate-pulse">
+                <svg
+                  version="1.1"
+                  id="Capa_1 c"
+                  className="w-[40px] h-[40px] md:w-[80px] md:h-[80px] lg:w-[150px] xl:h-[200px]"
+                  viewBox="0 0 58 58"
+                >
+                  <circle style={{ fill: '#D4AF37' }} cx="29" cy="29" r="29" />
+                  <g>
+                    <polygon
+                      style={{ fill: '#FFFFFF' }}
+                      points="44,29 22,44 22,29.273 22,14 	"
+                    />
+                    <path
+                      style={{ fill: '#FFFFFF' }}
+                      d="M22,45c-0.16,0-0.321-0.038-0.467-0.116C21.205,44.711,21,44.371,21,44V14
+                    c0-0.371,0.205-0.711,0.533-0.884c0.328-0.174,0.724-0.15,1.031,0.058l22,15C44.836,28.36,45,28.669,45,29s-0.164,0.64-0.437,0.826
+                    l-22,15C22.394,44.941,22.197,45,22,45z M23,15.893v26.215L42.225,29L23,15.893z"
+                    />
+                  </g>
+                </svg>
+              </div>
+            </div>
+        
+        </button>
+        <div className="flex flex-grow items-center mt-1 ">
+          <div className=" bg-white px-4 py-2 space-y-2 md:space-y-3 rounded-md flex-grow">
+          
+          
+              <p className="text-xs md:text-base">Loading..</p>
+          
+          <div className='bg-gold px-2 py-1 rounded-md h-6 w-24'>
+          <h1 className="w-[90%] text-xs md:text-normal rounded-md overflow-hidden text-ellipsis whitespace-nowrap">
+
+</h1>
+          </div>
+          <div className='flex gap-2' >
+          <p className='text-[10px] text-gray-600 h-4'></p>
+          
+          </div>
+       
+
+
+          
+            <div className="flex justify-end">
+              <button
+             
+                className="flex gap-2 items-center bg-black/40 px-4 py-2 h-6 w-24 rounded-md"
+              >
+                <p className="text-xs"></p>
+             
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className=" col-span-3 bg-black/50 rounded-md p-2 max-h-40 overflow-y-scroll my-4 ">
+        <ul className="space-y-1">
+ 
+            <li
+           
+              className="bg-white/90 px-2 py-1 text-xs md:text-base rounded-sm cursor-pointer flex justify-between items-center"
+            >
+              <p>Loading..</p>
+              <div className='max-sm:my-1'>
+          
+         
+            <div>
+              <button className=" ">
+                <svg
+                  version="1.1"
+                  id="Capa_1 c"
+                  className="w-4 h-4"
+                  viewBox="0 0 58 58"
+                >
+                  <circle style={{ fill: '#D4AF37' }} cx="29" cy="29" r="29" />
+                  <g>
+                    <polygon
+                      style={{ fill: '#FFFFFF' }}
+                      points="44,29 22,44 22,29.273 22,14 	"
+                    />
+                    <path
+                      style={{ fill: '#FFFFFF' }}
+                      d="M22,45c-0.16,0-0.321-0.038-0.467-0.116C21.205,44.711,21,44.371,21,44V14
+                    c0-0.371,0.205-0.711,0.533-0.884c0.328-0.174,0.724-0.15,1.031,0.058l22,15C44.836,28.36,45,28.669,45,29s-0.164,0.64-0.437,0.826
+                    l-22,15C22.394,44.941,22.197,45,22,45z M23,15.893v26.215L42.225,29L23,15.893z"
+                    />
+                  </g>
+                </svg>
+              </button>
+            </div>
+          
+              </div>
+            </li>
+            <li
+           
+           className="bg-white/90 px-2 py-1 text-xs md:text-base rounded-sm cursor-pointer flex justify-between items-center"
+         >
+           <p>Loading..</p>
+           <div className='max-sm:my-1'>
+       
+      
+         <div>
+           <button className=" ">
+             <svg
+               version="1.1"
+               id="Capa_1 c"
+               className="w-4 h-4"
+               viewBox="0 0 58 58"
+             >
+               <circle style={{ fill: '#D4AF37' }} cx="29" cy="29" r="29" />
+               <g>
+                 <polygon
+                   style={{ fill: '#FFFFFF' }}
+                   points="44,29 22,44 22,29.273 22,14 	"
+                 />
+                 <path
+                   style={{ fill: '#FFFFFF' }}
+                   d="M22,45c-0.16,0-0.321-0.038-0.467-0.116C21.205,44.711,21,44.371,21,44V14
+                 c0-0.371,0.205-0.711,0.533-0.884c0.328-0.174,0.724-0.15,1.031,0.058l22,15C44.836,28.36,45,28.669,45,29s-0.164,0.64-0.437,0.826
+                 l-22,15C22.394,44.941,22.197,45,22,45z M23,15.893v26.215L42.225,29L23,15.893z"
+                 />
+               </g>
+             </svg>
+           </button>
+         </div>
+       
+           </div>
+         </li>
+         <li
+           
+           className="bg-white/90 px-2 py-1 text-xs md:text-base rounded-sm cursor-pointer flex justify-between items-center"
+         >
+           <p>Loading..</p>
+           <div className='max-sm:my-1'>
+       
+      
+         <div>
+           <button className=" ">
+             <svg
+               version="1.1"
+               id="Capa_1 c"
+               className="w-4 h-4"
+               viewBox="0 0 58 58"
+             >
+               <circle style={{ fill: '#D4AF37' }} cx="29" cy="29" r="29" />
+               <g>
+                 <polygon
+                   style={{ fill: '#FFFFFF' }}
+                   points="44,29 22,44 22,29.273 22,14 	"
+                 />
+                 <path
+                   style={{ fill: '#FFFFFF' }}
+                   d="M22,45c-0.16,0-0.321-0.038-0.467-0.116C21.205,44.711,21,44.371,21,44V14
+                 c0-0.371,0.205-0.711,0.533-0.884c0.328-0.174,0.724-0.15,1.031,0.058l22,15C44.836,28.36,45,28.669,45,29s-0.164,0.64-0.437,0.826
+                 l-22,15C22.394,44.941,22.197,45,22,45z M23,15.893v26.215L42.225,29L23,15.893z"
+                 />
+               </g>
+             </svg>
+           </button>
+         </div>
+       
+           </div>
+         </li>
+         <li
+           
+           className="bg-white/90 px-2 py-1 text-xs md:text-base rounded-sm cursor-pointer flex justify-between items-center"
+         >
+           <p>Loading..</p>
+           <div className='max-sm:my-1'>
+       
+      
+         <div>
+           <button className=" ">
+             <svg
+               version="1.1"
+               id="Capa_1 c"
+               className="w-4 h-4"
+               viewBox="0 0 58 58"
+             >
+               <circle style={{ fill: '#D4AF37' }} cx="29" cy="29" r="29" />
+               <g>
+                 <polygon
+                   style={{ fill: '#FFFFFF' }}
+                   points="44,29 22,44 22,29.273 22,14 	"
+                 />
+                 <path
+                   style={{ fill: '#FFFFFF' }}
+                   d="M22,45c-0.16,0-0.321-0.038-0.467-0.116C21.205,44.711,21,44.371,21,44V14
+                 c0-0.371,0.205-0.711,0.533-0.884c0.328-0.174,0.724-0.15,1.031,0.058l22,15C44.836,28.36,45,28.669,45,29s-0.164,0.64-0.437,0.826
+                 l-22,15C22.394,44.941,22.197,45,22,45z M23,15.893v26.215L42.225,29L23,15.893z"
+                 />
+               </g>
+             </svg>
+           </button>
+         </div>
+       
+           </div>
+         </li>
+       
+        </ul>
+      </div>
+    </div>
+    )
+  
+  }
+
 
   return (
     <div className="min-w-[300px] min-h-[100px] mx-auto gap-2 shadow-md px-3 bg-player bg-white/70 rounded-md flex flex-col border border-gold text-black">
@@ -102,8 +328,8 @@ const MusicPlayer = () => {
             ) : (
               <p className="text-xs md:text-base">Play Now</p>
             )}
-          <div className='bg-gold px-2 py-1'>
-          <h1 className="w-[90%] text-xs md:text-base rounded-md overflow-hidden text-ellipsis whitespace-nowrap">
+          <div className='bg-gold px-2 py-1 rounded-md'>
+          <h1 className="w-[90%] text-xs md:text-normal rounded-md overflow-hidden text-ellipsis whitespace-nowrap">
   {currentSong.title}
 </h1>
           </div>
