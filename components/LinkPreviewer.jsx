@@ -33,9 +33,9 @@ const LinkPreview = ({ url }) => {
   if (!preview) return <p>No preview available</p>;
 
   return (
-    <div className="border p-4 m-4 max-w-md rounded-lg shadow-lg bg-white">
+    <div className="border p-4 md:m-4 max-w-md rounded-lg shadow-lg bg-white">
       {preview.image && <Image className="w-full h-40 mb-4 rounded" src={preview.image} alt="Preview image" width={500} height={500}/>}
-      <h3 className="text-sm md:text-md md:font-bold mb-2">{preview.title}</h3>
+      <h3 className="text-xs md:text-md font-bold mb-2">{preview.title}</h3>
       <div className='flex flex-col '>
       <p className="text-gray-500 text-sm mb-2">{preview.domain}</p>
       <Link
