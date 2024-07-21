@@ -45,5 +45,26 @@ export const songs = [
       artiste:'King-G',
       url: '/Music/SHAWER_LOVE.mp3',
     },
+    {
+      title: 'Ginger',
+      artiste:'Prinz Xtra',
+      url: '/Music/PRINZ-XTRA_-GINGER_PROD-BY-PHILSBITZ-2_1.mp3',
+    },   {
+      title: 'Akosua',
+      artiste:'Prinz Xtra',
+      url: '/Music/Prinz-Xtra-Akosua-Prod-by-Philsbitz.mp3',
+    },   {
+      title: 'New Town',
+      artiste:'Prinz Xtra',
+      url: '/Music/Prince-Xtra_-New-town_-Prod-by-Philsbitz.mp3',
+    },   {
+      title: 'I cant deny',
+      artiste:'Prinz Xtra',
+      url: '/Music/Prinz-Xtra_I-cant-deny_Prod-by-Philsbitz.mp3',
+    },{
+      title: 'Whatsup',
+      artiste:'Prinz Xtra',
+      url: '/Music/Prinz-Xtra_-Whatsup-.mp3',
+    },
  
   ];
