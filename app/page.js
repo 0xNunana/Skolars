@@ -1,5 +1,6 @@
 
 
+import Blogs from "@/sections/Blogs";
 import Hero from "@/sections/Hero";
 import Updates from "@/sections/Updates";
 
