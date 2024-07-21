@@ -1,11 +1,14 @@
 import Image from 'next/image'
 import React from 'react'
 import Link from 'next/link'
+import Blogs from './Blogs'
 
 const Updates = () => {
   return (
     <secion className='bg-update bg-cover bg-no-repeat bg-gold rounded-tl-3xl md:rounded-tl-[5%] -mt-16 z-40 text-black'>
+   
     <div className='px-5 max-w-screen-2xl mx-auto py-[5%] '>
+    <Blogs/>
 <div className='grid sm:grid-cols-5 md:grid-cols-7 gap-3'>
 <div className=' col-span-1 sm:col-span-3 justify-center items-center flex w-full border-2 border-[#3c90d8] bg-white rounded-tl-3xl sm:rounded-tl-[10%] rounded-md'>
     <div className='py-5 space-y-4'>
